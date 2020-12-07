@@ -33,6 +33,6 @@ class UserExport implements FromCollection, withHeadings, WithCustomStartCell
     }
     public function collection()
     {
-        return User::all();
+        return User::where('id_level', 1)->get();
     }
 }

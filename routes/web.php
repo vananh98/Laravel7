@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 Route::resource('store','testController');
 Route::get('export','UserController@export')->name('export.excel');
+Route::get('get','pdfController@get');
+Route::get('pdf','pdfController@pdf');
